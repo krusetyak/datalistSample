@@ -1,0 +1,15 @@
+﻿@page "/view"
+
+<input list="view-list" @onchange="ChangeSelect" />
+<datalist id="view-list">
+    @foreach (var view in Views)
+    {
+        <option value="@view.Name"></option>
+    }
+</datalist>
+
+<div>選択された値は： @ViewCode</div>
+
+@code {
+
+}
